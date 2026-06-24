@@ -174,11 +174,17 @@ Gallery
 
 <div class="gallery-grid">
 
-<img src="1 img.jpg" alt="صوره">
+<img src="4img.jpg" alt="صوره">
 <img src="2img.jpg" alt="fotoo">
 <img src="3img.jpg" alt="fotoo">
+<img src="5img.jpg" alt="fotoo">
+<img src="6img.jpg" alt="fotoo" />
+<img src="7img.jpg" alt="" />
+
+
 
 </div>
+
 
 </section>
 
@@ -217,54 +223,97 @@ One of the best stays near the pyramids.
 </section>
 
 <!-- Contact -->
-<section id="contact" class="contact">
 
-<h2>Contact Us</h2>
 
-<form>
 
-<input type="text"
-placeholder="Your Name"
-required>
 
-<input type="email"
-placeholder="Your Email"
-required>
+<section class="contact-section">
+    <h2>Book Your Room</h2><form action="https://formsubmit.co/gm@Laboutiqe-hotel.com" method="POST">
 
-<textarea
-placeholder="Your Message"
-required></textarea>
+    <input type="text" name="name" placeholder="Full Name" required>
 
-<button type="submit">
-Send Message
-</button>
+    <input type="text" name="contact" placeholder="Email or Phone Number" required>
+
+    <select name="room_type" required>
+        <option value="">Choose Room Type</option>
+        <option value="Single Room">Single Room</option>
+        <option value="Double Room">Double Room</option>
+        <option value="Triple Room">Triple Room</option>
+    </select>
+
+    <input type="number" name="guests" placeholder="Number of Guests" min="1" required>
+
+    <textarea name="notes" rows="5" placeholder="Special Requests or Notes"></textarea>
+
+    <button type="submit" class="send-btn">Send Request</button>
 
 </form>
 
-<div class="contact-info">
-
-<p>
-<i class="fas fa-envelope"></i>
-sasaalqnas542@gmail.com
-</p>
-
-<p>
-<i class="fab fa-whatsapp"></i>
-+20 108 078 2952
-</p>
-
-<a class="whatsapp-btn"
-href="https://wa.me/201080782952"
-target="_blank">
-
-Chat On WhatsApp
-
+<a href="https://wa.me/201100690209?text=Hello%20La%20Boutique%20Hotel,%20I%20would%20like%20to%20book%20a%20room." target="_blank" class="whatsapp-btn">
+    Contact via WhatsApp
 </a>
 
-</div>
+<p class="reply-text">
+    Thank you for contacting La Boutique Hotel.<br>
+    We will respond as soon as possible.
+</p>
 
 </section>
+<style>
+.contact-section{
+    max-width:700px;
+    margin:auto;
+    padding:40px;
+    background:#ffffff;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    text-align:center;
+}.contact-section h2{
+margin-bottom:25px;
+}
 
+.contact-section input,
+.contact-section select,
+.contact-section textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+box-sizing:border-box;
+}
+
+.send-btn{
+width:100%;
+padding:15px;
+border:none;
+border-radius:10px;
+background:#c9a227;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+.whatsapp-btn{
+display:block;
+margin-top:20px;
+padding:15px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+}
+
+.reply-text{
+margin-top:20px;
+color:#666;
+font-size:15px;
+}
+</style>
+}
 <!-- Footer -->
 <footer>
 
@@ -294,4 +343,5 @@ All Rights Reserved.
 <script src="script.js"></script>
 
 </body>
-</html>
+ </html>
+
